@@ -1,10 +1,10 @@
-# Karpathy-Inspired Claude Code Guidelines
+# Karpathy-Inspired Agent Guidelines (Claude Code / Codex / Kimi Code)
 
 > Check out my new project [Multica](https://github.com/multica-ai/multica) — an open-source platform for running and managing coding agents with reusable skills.
 >
 > Follow me on X: [https://x.com/jiayuan_jy](https://x.com/jiayuan_jy)
 
-A single `CLAUDE.md` file to improve Claude Code behavior, derived from [Andrej Karpathy's observations](https://x.com/karpathy/status/2015883857489522876) on LLM coding pitfalls.
+Guidelines files (`AGENTS.md` canonical, `CLAUDE.md` imports it) to improve AI coding agent behavior — works with Claude Code, Codex CLI, and Kimi Code, derived from [Andrej Karpathy's observations](https://x.com/karpathy/status/2015883857489522876) on LLM coding pitfalls.
 
 English | [简体中文](./README.zh.md)
 
@@ -112,7 +112,15 @@ Then install the plugin:
 
 This installs the guidelines as a Claude Code plugin, making the skill available across all your projects.
 
-**Option B: CLAUDE.md (per-project)**
+**Option B: AGENTS.md (Codex CLI / Kimi Code, per-project)**
+
+```bash
+curl -o AGENTS.md https://raw.githubusercontent.com/kamplusoffice/andrej-karpathy-skills/main/AGENTS.md
+```
+
+Codex CLI and Kimi Code both read `AGENTS.md` from the project root automatically.
+
+**Option C: CLAUDE.md (Claude Code, per-project)**
 
 New project:
 ```bash
